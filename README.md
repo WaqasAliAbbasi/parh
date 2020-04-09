@@ -8,9 +8,9 @@ Simply copy whatever you want to read into Parh.
 
 ## Features
 
-- Responsive reading
+- Responsive design for easy reading on all screen sizes
 - Readable font
-- Lookup meaning by clicking on word
+- Find transliteration and meaning by just a click of the word
 
 ## Currently Supported Languages
 
