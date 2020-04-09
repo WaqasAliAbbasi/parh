@@ -6,6 +6,14 @@ import { text } from "../../data/sindhi";
 export const SindhiRead = () => (
   <Box>
     <Heading>Read Sindhi</Heading>
-    <Text paddingTop={1}>{text}</Text>
+    <Text
+      paddingTop={1}
+      fontFamily="Noto Naksh Arabic"
+      textAlign="right"
+      fontSize={3}
+      lineHeight={2.4}
+    >
+      {text}
+    </Text>
   </Box>
 );

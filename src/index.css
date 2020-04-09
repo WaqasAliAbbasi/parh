@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Noto Naksh Arabic";
+  src: local("Noto Naksh Arabic"),
+    url(./fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf) format("truetype");
+}
