@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Parh/static/css/main.33daf26f.chunk.css",
+    "main.js": "/Parh/static/js/main.b18688f5.chunk.js",
+    "main.js.map": "/Parh/static/js/main.b18688f5.chunk.js.map",
+    "runtime-main.js": "/Parh/static/js/runtime-main.c394a686.js",
+    "runtime-main.js.map": "/Parh/static/js/runtime-main.c394a686.js.map",
+    "static/js/2.feaeb6cc.chunk.js": "/Parh/static/js/2.feaeb6cc.chunk.js",
+    "static/js/2.feaeb6cc.chunk.js.map": "/Parh/static/js/2.feaeb6cc.chunk.js.map",
+    "index.html": "/Parh/index.html",
+    "precache-manifest.2d8d3505267736aec1465d5e3b3e419d.js": "/Parh/precache-manifest.2d8d3505267736aec1465d5e3b3e419d.js",
+    "service-worker.js": "/Parh/service-worker.js",
+    "static/css/main.33daf26f.chunk.css.map": "/Parh/static/css/main.33daf26f.chunk.css.map",
+    "static/js/2.feaeb6cc.chunk.js.LICENSE.txt": "/Parh/static/js/2.feaeb6cc.chunk.js.LICENSE.txt",
+    "static/media/NotoNaskhArabic-Regular.ttf": "/Parh/static/media/NotoNaskhArabic-Regular.bca554bd.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c394a686.js",
+    "static/js/2.feaeb6cc.chunk.js",
+    "static/css/main.33daf26f.chunk.css",
+    "static/js/main.b18688f5.chunk.js"
+  ]
+}
