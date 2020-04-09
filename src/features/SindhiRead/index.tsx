@@ -3,8 +3,11 @@ import { Heading, Text, Button, Flex } from "rebass";
 import { Textarea, Label } from "@rebass/forms";
 
 import { sampleSindhi } from "../../data/sindhi";
+import { WordDetails } from "./WordDetails";
 
 export const SindhiRead = () => {
+  const [selectedWord, setSelectedWord] = React.useState("");
+  const [wordDetailsVisible, setWordDetailsVisible] = React.useState(false);
   const [inputVisible, setInputVisible] = React.useState(true);
   const [input, setInput] = React.useState(sampleSindhi);
   const [text, setText] = React.useState("");
@@ -16,7 +19,7 @@ export const SindhiRead = () => {
           <Label htmlFor="input">Copy/Paste Sindhi text here:</Label>
           <Textarea
             id="input"
-            style={{ fontFamily: "Noto Naksh Arabic" }}
+            style={{ fontFamily: "Noto Naksh Arabic, system-ui, sans-serif" }}
             onChange={(event) => setInput(event.target.value)}
             rows={8}
             value={input}
@@ -33,9 +36,16 @@ export const SindhiRead = () => {
           </Button>
         </>
       )}
+      {wordDetailsVisible && (
+        <WordDetails
+          visible={wordDetailsVisible}
+          word={selectedWord}
+          closeModal={() => setWordDetailsVisible(false)}
+        />
+      )}
       <Text
         paddingTop={1}
-        fontFamily="Noto Naksh Arabic"
+        fontFamily="Noto Naksh Arabic, system-ui, sans-serif"
         fontSize={3}
         lineHeight={2.4}
         dir="rtl"
@@ -43,15 +53,10 @@ export const SindhiRead = () => {
       >
         {text.split(" ").map((word, index) => (
           <span
-            onClick={() =>
-              window.open(
-                `http://dic.sindhila.edu.pk/define/${word.replace(
-                  /[.,;'":”“،!\s]/g,
-                  ""
-                )}.php`,
-                "_blank"
-              )
-            }
+            onClick={() => {
+              setSelectedWord(word);
+              setWordDetailsVisible(true);
+            }}
             key={index}
           >
             {word}{" "}
