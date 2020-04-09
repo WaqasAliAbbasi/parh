@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,WACE,+BAAgC,CAChC,8GAEF","file":"main.33daf26f.chunk.css","sourcesContent":["@font-face {\n  font-family: \"Noto Naksh Arabic\";\n  src: local(\"Noto Naksh Arabic\"),\n    url(./fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf) format(\"truetype\");\n}\n"]}
