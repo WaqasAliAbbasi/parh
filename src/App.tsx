@@ -6,7 +6,7 @@ import { Header } from "./components";
 import { Home, SindhiRead } from "./features";
 
 export const App = () => (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Flex flexDirection="column" minHeight="100vh">
       <Header />
       <Flex p={2} flex={1}>
