@@ -19,11 +19,12 @@ export const SindhiRead = () => {
             onChange={(event) => setInput(event.target.value)}
             rows={8}
             value={input}
+            dir="rtl"
           />
           <Button
             m={1}
             onClick={() => {
-              setText(input);
+              setText(input.replace(/\n\s*\n/g, "\n\n"));
               setInputVisible(false);
             }}
           >
@@ -34,9 +35,10 @@ export const SindhiRead = () => {
       <Text
         paddingTop={1}
         fontFamily="Noto Naksh Arabic"
-        textAlign="right"
         fontSize={3}
         lineHeight={2.4}
+        dir="rtl"
+        style={{ whiteSpace: "pre-line" }}
       >
         {text.split(" ").map((word, index) => (
           <span
