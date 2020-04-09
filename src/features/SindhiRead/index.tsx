@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Button, Flex } from "rebass";
+import { Heading, Text, Button, Flex } from "rebass";
 import { Textarea, Label } from "@rebass/forms";
 
 import { sampleSindhi } from "../../data/sindhi";
@@ -16,6 +16,7 @@ export const SindhiRead = () => {
           <Label htmlFor="input">Copy/Paste Sindhi text here:</Label>
           <Textarea
             id="input"
+            style={{ fontFamily: "Noto Naksh Arabic" }}
             onChange={(event) => setInput(event.target.value)}
             rows={8}
             value={input}
