@@ -18,7 +18,7 @@
     "@types/rebass": "^4.0.5",
     "@types/rebass__forms": "^4.0.1",
     "@types/theme-ui": "^0.3.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
